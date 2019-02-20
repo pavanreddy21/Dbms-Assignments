@@ -1,4 +1,4 @@
-select customer.* from customer 
+select distinct customer.* from customer 
 inner join rental on rental.customer_id=customer.customer_id
 inner join inventory on inventory.inventory_id=rental.inventory_id
 inner join film on film.film_id=inventory.film_id
